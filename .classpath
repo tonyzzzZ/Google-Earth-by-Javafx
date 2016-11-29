@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="images"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<accessrules>
+			<accessrule kind="accessible" pattern="javafx/application/**"/>
+			<accessrule kind="accessible" pattern="javafx/stage/**"/>
+			<accessrule kind="accessible" pattern="javafx/fxml/**"/>
+			<accessrule kind="accessible" pattern="javafx/scene/**"/>
+			<accessrule kind="accessible" pattern="javafx/event/**"/>
+			<accessrule kind="accessible" pattern="javafx/collections/ObservableList**"/>
+		</accessrules>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/zhanghongtao/Documents/Java_ijp/json-lib-2.4-jdk15.jar"/>
+	<classpathentry kind="lib" path="/Users/zhanghongtao/Documents/Java_ijp/json-20160810.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

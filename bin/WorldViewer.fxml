@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.WorldController">
+   <children>
+      <ImageView fx:id="directionView" fitHeight="50.0" fitWidth="50.0" layoutX="83.0" layoutY="66.0" opacity="0.0" pickOnBounds="true" preserveRatio="true" />
+      <Rectangle arcHeight="3.0" arcWidth="5.0" fill="#868686" height="400.0" layoutX="597.0" opacity="0.43" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="408.0" layoutY="-1.0" onMouseDragged="#mouseDrag" onMousePressed="#mouseRead" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="800.0" AnchorPane.bottomAnchor="-7.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-1.0" />
+      <ImageView fx:id="itemView" fitHeight="50.0" fitWidth="50.0" layoutX="725.0" layoutY="86.0" onMouseDragged="#dragItem" pickOnBounds="true" preserveRatio="true" />
+      <ToggleButton fx:id="buttonViewUp" layoutX="362.0" layoutY="258.0" mnemonicParsing="false" onAction="#moveForward" prefHeight="28.0" prefWidth="50.0" rotate="180.0" />
+      <ToggleButton fx:id="buttonViewDown" layoutX="362.0" layoutY="346.0" mnemonicParsing="false" onAction="#moveBackward" prefHeight="35.0" prefWidth="50.0" />
+      <ImageView fx:id="itemView2" fitHeight="50.0" fitWidth="50.0" layoutX="725.0" layoutY="315.0" onMouseDragged="#dragItem2" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="itemView3" fitHeight="50.0" fitWidth="50.0" layoutX="725.0" layoutY="171.0" onMouseDragged="#dragItem3" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="itemView4" fitHeight="50.0" fitWidth="50.0" layoutX="725.0" layoutY="250.0" onMouseDragged="#dragItem4" pickOnBounds="true" preserveRatio="true" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#edeff000" height="131.0" layoutY="263.0" stroke="#656363" strokeType="INSIDE" strokeWidth="2.0" width="204.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0" />
+      <ScrollPane fx:id="scrollPane" hvalue="1.0" layoutX="8.0" layoutY="259.0" prefHeight="127.0" prefWidth="200.0" vvalue="1.0" AnchorPane.bottomAnchor="32.0" AnchorPane.leftAnchor="32.0">
+         <content>
+            <AnchorPane prefHeight="279.0" prefWidth="183.0">
+               <children>
+                  <ImageView fx:id="mapView" fitHeight="279.0" fitWidth="233.0" layoutX="-3.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="42.0" fitWidth="31.0" layoutX="80.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <ToggleButton fx:id="buttonViewRight" layoutX="432.0" layoutY="293.0" mnemonicParsing="false" onAction="#turnRight" prefHeight="50.0" prefWidth="50.0" rotate="-90.3" />
+      <ToggleButton fx:id="buttonViewLeft" layoutX="293.0" layoutY="293.0" mnemonicParsing="false" onAction="#turnLeft" prefHeight="50.0" prefWidth="50.0" rotate="90.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9b9ea1" height="28.0" layoutX="32.0" layoutY="340.0" opacity="0.69" stroke="TRANSPARENT" strokeType="INSIDE" width="200.0" />
+      <Text fill="WHITE" layoutX="79.0" layoutY="359.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please scroll inside" />
+      <Button layoutX="702.0" layoutY="14.0" mnemonicParsing="false" onAction="#pickAll" prefHeight="27.0" prefWidth="100.0" text="PickAll">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

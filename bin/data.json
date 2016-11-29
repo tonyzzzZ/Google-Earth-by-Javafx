@@ -1,0 +1,18 @@
+{
+"pano":[
+{ "coordinate":"100,100" , "url":"1.png" }, 
+{ "coordinate":"100,101" , "url":"2.png" }, 
+{ "coordinate":"100,102" , "url":"3.png" },
+{ "coordinate":"100,103" , "url":"4.png" },
+{ "coordinate":"100,104" , "url":"5.png" },
+{ "coordinate":"100,105" , "url":"6.png" },
+{ "coordinate":"101,105" , "url":"pano21.png" }
+],
+"item":[
+{ "number": "1" , "url": "item5.png"},
+{ "number": "2" , "url": "item2.png"},
+{ "number": "3" , "url": "item3.png"},
+{ "number": "4" , "url": "item1.png"}
+]
+}
+
